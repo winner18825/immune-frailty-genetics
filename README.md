@@ -196,9 +196,7 @@ and runs MR across all available cell-gene and frailty-trait pairs.
 Important output files include:
 
 ```text
-results/mr/MR_all_methods_results.txt
-results/mr/MR_IVW_results_summary.txt
-results/mr/MR_IVW_significant_results.txt
+results/mr/MR_significant_results.txt
 results/mr/MR_heterogeneity_results.txt
 results/mr/MR_pleiotropy_results.txt
 ```
@@ -209,9 +207,9 @@ results/mr/MR_pleiotropy_results.txt
 source("03_Colocalization analysis.R")
 ```
 
-The script reads the MR-positive results, keeps significant inverse-variance-
-weighted and Wald-ratio associations, and tests the corresponding cell-gene
-pairs against all nine traits.
+
+The colocalization analysis uses "MR_significant_results.txt" after 
+multiple-testing correction with the Benjamini–Hochberg false-discovery-rate procedure.
 
 The outcome models are:
 
