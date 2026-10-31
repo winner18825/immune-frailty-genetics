@@ -196,6 +196,7 @@ and runs MR across all available cell-gene and frailty-trait pairs.
 Important output files include:
 
 ```text
+results/mr/MR_all_methods_results.txt
 results/mr/MR_significant_results.txt
 results/mr/MR_heterogeneity_results.txt
 results/mr/MR_pleiotropy_results.txt
