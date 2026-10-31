@@ -1,8 +1,6 @@
-# Immune Cell eQTL Mendelian Randomization, Colocalization, and DICE Replication
+# Mapping the immune-genetic architecture of frailty-related traits across physical, psychological, and social frailty
 
-Analysis code for assessing the causal effects of immune-cell-specific gene
-expression on multidimensional frailty traits, followed by Bayesian
-colocalization and replication using DICE immune-cell eQTL data.
+Assessing the causal effects of immune-cell-specific gene expression on multidimensional frailty traits
 
 The workflow uses publicly available GWAS summary statistics, OneK1K
 single-cell eQTL data, DICE eQTL data, local LD reference data, and open-source
@@ -52,11 +50,10 @@ install.packages(c(
 Optional packages:
 
 ```r
-install.packages(c("MRPRESSO", "locuscomparer"))
+install.packages("locuscomparer")
 ```
 
-`MRPRESSO` is used only when available in the MR script. `locuscomparer` can
-be used for optional colocalization plots.
+`locuscomparer` can be used for optional colocalization plots.
 
 The MR instrument-preparation step also requires:
 
@@ -273,15 +270,5 @@ results/dice_replication/<cell>/<gene>/<trait>.MR.txt
 ## Method references
 
 - **TwoSampleMR** — Hemani et al. *eLife* 2018.
-- **MR-PRESSO** — Verbanck et al. *Nature Genetics* 2018.
 - **coloc** — Giambartolomei et al. *PLoS Genetics* 2014.
 - **PLINK** — Purcell et al. *American Journal of Human Genetics* 2007.
-
-## Citation
-
-If you use this code, please cite the associated study and the software listed
-above.
-
-## License
-
-Add the project license here before public release.
